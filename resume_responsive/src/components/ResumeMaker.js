@@ -47,16 +47,16 @@ class ResumeMaker extends React.Component {
             <div id="resume_maker">
                 <AlertComponent content={this.state.alertContent} isShow={this.state.alertShow} />
                 <div className="row justify-content-center">
-                    <div className="col-3">
+                    <div className="col">
                         <SaveButton onSubmit={this.massUpdateState} />
                     </div>
-                    <div className="col-3">
+                    <div className="col">
                         <ClearButton onClick={this.massUpdateState} />
                     </div>
-                    <div className="col-3">
+                    <div className="col">
                         <LoadButton onSelect={this.massUpdateState} list={this.state.resumeList} />
                     </div>
-                    <div className="col-3">
+                    <div className="col">
                         <DeleteButton onSubmit={this.massUpdateState} id={this.state.currentResumeId} />
                     </div>
                 </div>
