@@ -1,0 +1,7 @@
+node_modules
+env_python
+.sass-cache
+.vscode
+__pycache__
+*.css.map
+scripts

@@ -1,0 +1,15 @@
+# Distinctiveness and Complexity
+As a person who want to pursue the career of a IT engineer despite not graduating from computer science major, I understand more than anyone the struggle of finding a job in the field. In order to increase the chance  of being recruited, having a good resume is very important. From those reason, I decided to make a resume builder website as the final project for CS50W course. The format of the resume is a [one-page killer resume](https://www.freecodecamp.org/news/writing-a-killer-software-engineering-resume-b11c91ef699d/).<br>
+This website doesn’t try to sell or share anything, but allows user to create, read, update and delete (CRUD) resumes privately. Furthermore, you can view what your resume looks like in the A4 format, and can print or save it as a PDF to send it to the employers. From those points, I believe my final project is distinct from the previous ones. The website is also designed to be mobile responsive.<br>
+The website is built using Django and Django Rest Framework for backend, and React for frontend. The reason I employ Django Rest Framework is because of its browsable API, which makes things easier when using React. Working in backend is simple, utilizing React to make frontend is a completely different story. After painstakingly spending over two months to learn React from [react.org](https://reactjs.org/), I realized  class components are not often used anymore, people switch to hook instead. Most of the solutions for my problems related to React on [stackOverFlow](https://stackoverflow.com/) are written with hook. Since I know nothing about it, I have to figure all of my problems on my onw. Now I understand why people keep saying two years in front-end development is equal to an aeon.<br>
+# Project structure
+This project follows basic structure of a Django project.There are three Django applications in this project: **job_finder**, **resume** and **resume_responsive**. The job_finder application contains main backend functionalities, the **resume** application is responsible for resume view in A4 format, while **resume_responsive** application is mobile-responsive and is the main frontend of the website. The react components are defined in the `src/components` folders, which can be found in both **resume** and **resume_responsive** folder.
+# How to run
+1. Clone the repository.
+2. Create Python virtual environment and activate it.
+3. Install dependencies by running the following command: 
+> pip install -r .\requirements.txt"
+4. Start the website by running:
+> python manage.py runserver
+# Additional information
+To  update a resume, simply load it from the database, edit and then save it with the same name. For this resume builder, you can create, save and delete resumes only in **resume_responsive** page. However, you can edit the current resume in **resume** page. In addition, The website uses sessionStorage to retain user’s filled in data in case tab is reloaded or closed accidentally. Note that all the data in sessionStorage will be wiped out if  user logs out from their account. 
