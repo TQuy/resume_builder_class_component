@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '0ufup=1!4oyg5bho40)ycly%g+)l97kycordcg0a&^%!v&&)r2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "resume-builder-env.eba-z2m4fpyd.ap-southeast-1.elasticbeanstalk.com",
